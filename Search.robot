@@ -1,8 +1,6 @@
 *** Settings ***
 Documentation                                      This is a basic test
 Library                                            SeleniumLibrary
-Documentation   This contains 2 test cases
-Library    SeleniumLibrary
 
 *** Variables ***
 ${url}                                              https://www.google.com
