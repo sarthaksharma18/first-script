@@ -15,7 +15,7 @@ User to open page
     close browser
 
 User to enter text in the Search box
-    [Documentation]                                 As a user I can enter the text 'Python' and search for it
+    [Documentation]                                 As a user I can enter the text 'Python',search for it & log them in console
     open browser                                    ${URL}    ${browser}
     wait until page contains                        ${URL}
     input text                                      ${text}  Python
