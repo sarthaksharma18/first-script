@@ -7,7 +7,6 @@ ${url}                                              https://www.google.com
 ${browser}                                          chrome
 ${text}                                             xpath=//input[@title="Search"]
 
-
 *** Test Cases ***
 User to open page
     [Documentation]                                 As a user I can open the google search page
@@ -22,5 +21,11 @@ User to enter text in the Search box
     input text                                      ${text}  Python
     Press keys                                      ${text}  RETURN
     wait until page contains                        Python
-    sleep     5s
+    sleep    4s
+    ${searchresults}=   Get WebElements   //*[@id='search']//following::h3
+    FOR  ${searchresult}  IN  @{searchresults}
+    ${search}=    Get Text   ${searchresult}
+    log to console    "These are the search results: ${search}"
+    END
+
     Close Browser

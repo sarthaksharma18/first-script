@@ -1,75 +1,471 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220307 12:56:35.965" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.9.7 on win32)" generated="20220308 18:12:30.115" rpa="false" schemaversion="2">
 <suite id="s1" name="Search" source="C:\Users\sarsharm11\PycharmProjects\first-script\Search.robot">
 <test id="s1-t1" name="User to open page">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 12:56:36.212" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<status status="PASS" starttime="20220307 12:56:36.211" endtime="20220307 12:56:43.124"/>
+<msg timestamp="20220308 18:12:30.320" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20220308 18:12:30.320" endtime="20220308 18:12:37.404"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${url}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220307 12:56:43.125" endtime="20220307 12:56:43.149"/>
+<status status="PASS" starttime="20220308 18:12:37.406" endtime="20220308 18:12:37.498"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220307 12:56:43.150" endtime="20220307 12:56:45.347"/>
+<status status="PASS" starttime="20220308 18:12:37.498" endtime="20220308 18:12:39.632"/>
 </kw>
 <doc>As a user I can open the google search page</doc>
-<status status="PASS" starttime="20220307 12:56:36.210" endtime="20220307 12:56:45.349"/>
+<status status="PASS" starttime="20220308 18:12:30.319" endtime="20220308 18:12:39.634"/>
 </test>
 <test id="s1-t2" name="User to enter text in the Search box">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220307 12:56:45.355" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
-<status status="PASS" starttime="20220307 12:56:45.354" endtime="20220307 12:56:52.037"/>
+<msg timestamp="20220308 18:12:39.640" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20220308 18:12:39.639" endtime="20220308 18:12:46.677"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220307 12:56:52.038" endtime="20220307 12:56:52.058"/>
+<status status="PASS" starttime="20220308 18:12:46.677" endtime="20220308 18:12:46.767"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${text}</arg>
 <arg>Python</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220307 12:56:52.059" level="INFO">Typing text 'Python' into text field 'xpath=//input[@title="Search"]'.</msg>
-<status status="PASS" starttime="20220307 12:56:52.058" endtime="20220307 12:56:52.213"/>
+<msg timestamp="20220308 18:12:46.769" level="INFO">Typing text 'Python' into text field 'xpath=//input[@title="Search"]'.</msg>
+<status status="PASS" starttime="20220308 18:12:46.768" endtime="20220308 18:12:46.863"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${text}</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20220307 12:56:52.214" level="INFO">Sending key(s) ('RETURN',) to xpath=//input[@title="Search"] element.</msg>
-<msg timestamp="20220307 12:56:52.512" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20220307 12:56:52.512" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20220307 12:56:52.214" endtime="20220307 12:56:58.137"/>
+<msg timestamp="20220308 18:12:46.864" level="INFO">Sending key(s) ('RETURN',) to xpath=//input[@title="Search"] element.</msg>
+<msg timestamp="20220308 18:12:47.161" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20220308 18:12:47.161" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20220308 18:12:46.864" endtime="20220308 18:12:51.734"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Python</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220307 12:56:58.138" endtime="20220307 12:56:58.196"/>
+<status status="PASS" starttime="20220308 18:12:51.735" endtime="20220308 18:12:51.774"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
+<arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220307 12:57:03.202" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220307 12:56:58.196" endtime="20220307 12:57:03.202"/>
+<msg timestamp="20220308 18:12:55.785" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220308 18:12:51.775" endtime="20220308 18:12:55.785"/>
 </kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${searchresults}</var>
+<arg>//*[@id='search']//following::h3</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.860" level="INFO">${searchresults} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="e5e19fa1-7e02-4780-b7ba-372799f2d86b")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20220308 18:12:55.786" endtime="20220308 18:12:55.860"/>
+</kw>
+<for flavor="IN">
+<var>${searchresult}</var>
+<value>@{searchresults}</value>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="e5e19fa1-7e02-4780-b7ba-372799f2d86b")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.874" level="INFO">${search} = Welcome to Python.org</msg>
+<status status="PASS" starttime="20220308 18:12:55.860" endtime="20220308 18:12:55.874"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.874" endtime="20220308 18:12:55.875"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.860" endtime="20220308 18:12:55.875"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="37893c55-5a00-4f26-977b-b711e850b14e")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.887" level="INFO">${search} = Download the latest version</msg>
+<status status="PASS" starttime="20220308 18:12:55.875" endtime="20220308 18:12:55.887"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.887" endtime="20220308 18:12:55.888"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.875" endtime="20220308 18:12:55.888"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="0653807f-7d2f-4670-8bc2-b552d4e404e4")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.899" level="INFO">${search} = Documentation</msg>
+<status status="PASS" starttime="20220308 18:12:55.888" endtime="20220308 18:12:55.899"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.899" endtime="20220308 18:12:55.899"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.888" endtime="20220308 18:12:55.899"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="88a44b99-cf67-46a2-a9e1-953debafa205")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.910" level="INFO">${search} = Python For Beginners</msg>
+<status status="PASS" starttime="20220308 18:12:55.899" endtime="20220308 18:12:55.910"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.910" endtime="20220308 18:12:55.911"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.899" endtime="20220308 18:12:55.911"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="e8376a75-b7c0-433b-b0ba-c2f0fd683d4f")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.921" level="INFO">${search} = Python 3.10.2</msg>
+<status status="PASS" starttime="20220308 18:12:55.911" endtime="20220308 18:12:55.921"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.921" endtime="20220308 18:12:55.923"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.911" endtime="20220308 18:12:55.923"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="a2df7ffd-e56d-4b82-b572-e514b278dd38")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.935" level="INFO">${search} = Tutorial</msg>
+<status status="PASS" starttime="20220308 18:12:55.923" endtime="20220308 18:12:55.935"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.935" endtime="20220308 18:12:55.935"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.923" endtime="20220308 18:12:55.935"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="ffa760d0-81b6-4695-90fc-70c194894b65")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.947" level="INFO">${search} = Python Software Foundation</msg>
+<status status="PASS" starttime="20220308 18:12:55.936" endtime="20220308 18:12:55.947"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.947" endtime="20220308 18:12:55.947"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.935" endtime="20220308 18:12:55.947"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="1a2a695b-3b32-494a-8337-fbb67c112944")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.958" level="INFO">${search} = Python Tutorial - W3Schools</msg>
+<status status="PASS" starttime="20220308 18:12:55.947" endtime="20220308 18:12:55.958"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.958" endtime="20220308 18:12:55.959"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.947" endtime="20220308 18:12:55.959"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="3219fa38-7831-4891-943b-4648872df19d")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.975" level="INFO">${search} = People also ask</msg>
+<status status="PASS" starttime="20220308 18:12:55.959" endtime="20220308 18:12:55.975"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.975" endtime="20220308 18:12:55.976"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.959" endtime="20220308 18:12:55.976"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="a7363b4b-1039-4682-804c-9863e793ed59")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.986" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:55.976" endtime="20220308 18:12:55.986"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.986" endtime="20220308 18:12:55.986"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.976" endtime="20220308 18:12:55.986"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="17e6c8c7-02c6-41e4-9cb5-188ad0304c57")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:55.997" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:55.986" endtime="20220308 18:12:55.997"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:55.997" endtime="20220308 18:12:55.998"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.986" endtime="20220308 18:12:55.998"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="4a865d7b-7a67-4cd6-9f14-be3818d561f3")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.007" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:55.998" endtime="20220308 18:12:56.007"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.007" endtime="20220308 18:12:56.007"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:55.998" endtime="20220308 18:12:56.007"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="4edc77c7-1eb9-449d-a2d4-9bb67766e7b2")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.016" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:56.007" endtime="20220308 18:12:56.017"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.017" endtime="20220308 18:12:56.017"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.007" endtime="20220308 18:12:56.017"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="14622ff5-2502-42d7-83a0-a26cf199e41d")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.029" level="INFO">${search} = Python (programming language) - Wikipedia</msg>
+<status status="PASS" starttime="20220308 18:12:56.017" endtime="20220308 18:12:56.029"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.029" endtime="20220308 18:12:56.029"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.017" endtime="20220308 18:12:56.029"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="8a2ce731-9d6e-4b43-9ab1-aa9d7b0096c1")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.040" level="INFO">${search} = Python Tutorial - Tutorialspoint</msg>
+<status status="PASS" starttime="20220308 18:12:56.030" endtime="20220308 18:12:56.040"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.040" endtime="20220308 18:12:56.041"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.030" endtime="20220308 18:12:56.041"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="c608c422-f809-4718-81ad-78802433c364")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.052" level="INFO">${search} = Videos</msg>
+<status status="PASS" starttime="20220308 18:12:56.041" endtime="20220308 18:12:56.052"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.052" endtime="20220308 18:12:56.053"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.041" endtime="20220308 18:12:56.053"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="60b7354c-5ad6-4501-ab4b-3605a352f6aa")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.063" level="INFO">${search} = Top stories</msg>
+<status status="PASS" starttime="20220308 18:12:56.053" endtime="20220308 18:12:56.063"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.064" endtime="20220308 18:12:56.065"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.053" endtime="20220308 18:12:56.065"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="03cc0cb7-55fd-4efc-a97a-45114f5d9515")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.075" level="INFO">${search} = Online Python Compiler (Interpreter) - Programiz</msg>
+<status status="PASS" starttime="20220308 18:12:56.065" endtime="20220308 18:12:56.075"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.075" endtime="20220308 18:12:56.075"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.065" endtime="20220308 18:12:56.075"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="cc444e0b-7ab2-4907-99f6-cab45ab7e4c4")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.090" level="INFO">${search} = Related searches</msg>
+<status status="PASS" starttime="20220308 18:12:56.075" endtime="20220308 18:12:56.090"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.090" endtime="20220308 18:12:56.090"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.075" endtime="20220308 18:12:56.090"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="399d839a-9639-4cfe-a044-d90f0dc05efe")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.102" level="INFO">${search} = Description</msg>
+<status status="PASS" starttime="20220308 18:12:56.090" endtime="20220308 18:12:56.102"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.102" endtime="20220308 18:12:56.102"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.090" endtime="20220308 18:12:56.102"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="5c28935c-7bb1-4cc6-937f-fb05c88cb5c5")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.110" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:56.102" endtime="20220308 18:12:56.110"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.110" endtime="20220308 18:12:56.111"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.102" endtime="20220308 18:12:56.111"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="f81ab2b0-3154-42a9-a9a5-78ea4196b35d")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.121" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:56.112" endtime="20220308 18:12:56.121"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.121" endtime="20220308 18:12:56.121"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.111" endtime="20220308 18:12:56.121"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="5e99e260-4f97-4e0f-87ff-2e1805c85e90")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.130" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:56.121" endtime="20220308 18:12:56.130"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.130" endtime="20220308 18:12:56.131"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.121" endtime="20220308 18:12:56.131"/>
+</iter>
+<iter>
+<var name="${searchresult}">&lt;selenium.webdriver.remote.webelement.WebElement (session="58755dc8ef4cf33cc66fe995229c5555", element="1856feef-06c4-4a5e-b0a0-b8afe40ac2b2")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${search}</var>
+<arg>${searchresult}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220308 18:12:56.140" level="INFO">${search} = </msg>
+<status status="PASS" starttime="20220308 18:12:56.131" endtime="20220308 18:12:56.140"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"These are the search results: ${search}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220308 18:12:56.140" endtime="20220308 18:12:56.141"/>
+</kw>
+<status status="PASS" starttime="20220308 18:12:56.131" endtime="20220308 18:12:56.141"/>
+</iter>
+<status status="PASS" starttime="20220308 18:12:55.860" endtime="20220308 18:12:56.141"/>
+</for>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220307 12:57:03.203" endtime="20220307 12:57:05.423"/>
+<status status="PASS" starttime="20220308 18:12:56.142" endtime="20220308 18:12:58.272"/>
 </kw>
 <doc>As a user I can enter the text 'Python' and search for it</doc>
-<status status="PASS" starttime="20220307 12:56:45.353" endtime="20220307 12:57:05.425"/>
+<status status="PASS" starttime="20220308 18:12:39.636" endtime="20220308 18:12:58.274"/>
 </test>
 <doc>This is a basic test</doc>
-<status status="PASS" starttime="20220307 12:56:35.971" endtime="20220307 12:57:05.428"/>
+<status status="PASS" starttime="20220308 18:12:30.120" endtime="20220308 18:12:58.278"/>
 </suite>
 <statistics>
 <total>
