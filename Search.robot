@@ -6,7 +6,6 @@ Library                                            SeleniumLibrary
 ${url}                                              https://www.google.com
 ${browser}                                          chrome
 ${text}                                             xpath=//input[@title="Search"]
-
 *** Test Cases ***
 User to open page
     [Documentation]                                 As a user I can open the google search page
@@ -22,10 +21,10 @@ User to enter text in the Search box
     Press keys                                      ${text}  RETURN
     wait until page contains                        Python
     sleep    4s
-    ${searchresults}=   Get WebElements   //*[@id='search']//following::h3
+    ${searchresults}=   Get WebElements   //*[@id='search']//following::h3//following::div/cite
     FOR  ${searchresult}  IN  @{searchresults}
     ${search}=    Get Text   ${searchresult}
-    log to console    "These are the search results: ${search}"
+    log to console     ${search}
     END
 
     Close Browser
